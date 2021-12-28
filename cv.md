@@ -36,3 +36,13 @@ const isFormValidityGuestCount = function () {
   guestCountFormValue.reportValidity();
 }
 ```
+### Languages
+***
+* Russian (Native)
+* English (Elementary)
+***
+### Education
+***
+* Kuban State University
+* Armavir Engineering College
+***
