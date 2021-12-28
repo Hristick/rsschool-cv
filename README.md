@@ -1,2 +1,2 @@
 # rsschool-cv
-https://Hristick.github.io/rsschool-cv/
+https://hristick.github.io/rsschool-cv/
