@@ -46,3 +46,9 @@ const isFormValidityGuestCount = function () {
 * Kuban State University
 * Armavir Engineering College
 ***
+### My projects
+* https://hristick.github.io/1124561-kekstagram-23/
+* https://hristick.github.io/1124561-technomart-27/
+* https://techosmotr-armavir.ru/
+* https://techosmotr-novokubansk.ru/
+***
