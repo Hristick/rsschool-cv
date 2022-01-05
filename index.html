@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">  
     <head>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         <title>CV</title>
     </head>
     <body>
         <header>
-            <nav>
-                <ul class="navigaton">
-                    <li>About Myself</li>
-                    <li>Skils</li>
-                    <li>Code</li>
-                    <li>Languages</li>
-                    <li>Education</li>
-                    <li>My project</li>
+            <nav class="header-nav">
+                <ul class="navigation">
+                    <li class="nav-item"><a class="nav-link" href="#about"> About Myself</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skils">Skils</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lang">Languages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#edu">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">My project</a></li>
                 </ul>
             </nav>
-            <h1 class="hello">Vladimir Khristoforov</h1>
+            <h1 class="my-name">Vladimir Khristoforov</h1>
         </header>
-        <section class="about">
-            <img src="img/IMG_7506-min.jpg" width="300" height="250" alt="Avatar">
+        <div class="container">
+        <main class="main-wrap">    
+        <section class="about" id="about">
+            <img class="avatar" src="../img/IMG_7506-min.jpg" width="300" height="400" alt="Avatar">
             <h2>I am a switcher from another technical specialty. Took several courses at htmlacademy. I love the frontend and the magic of the web.</h2>
         </section>
-        <section class="skils">
+        <section class="skils" id="skils">
             <h2>My Skils</h2>
             <ul>
                 <li>html/css</li>
@@ -33,46 +35,50 @@
                 <li>Figma</li>
             </ul>
         </section>
-        <section class="code">
+        <section class="code" id="code">
             <h2>Code Exemple</h2>
-            <code>const isFormValidityGuestCount = function () {
-                const guestValue = guestCountFormValue.value;
-                const roomsValue = roomsNumberCount.value;
-                if (roomsValue === `100`)  {
-                roomsNumberCount.setCustomValidity('Данная категория не для гостей!');
-                guestCountFormValue.value = 0;
-                } else if (roomsValue < guestValue) {
-                roomsNumberCount.setCustomValidity('Вас слишком много выберите номер побольше!');
-                }   else  {roomsNumberCount.setCustomValidity(``);}
+            <code>const isFormValidityGuestCount = function () { <br>
+                &nbsp; const guestValue = guestCountFormValue.value;<br>
+                &nbsp; const roomsValue = roomsNumberCount.value;<br>
+                &nbsp; &nbsp;if (roomsValue === `100`)  {<br>
+                &nbsp;&nbsp;&nbsp; &nbsp;roomsNumberCount.setCustomValidity('Данная категория не для гостей!');<br>
+                &nbsp; &nbsp; &nbsp; guestCountFormValue.value = 0;<br>
+                &nbsp; &nbsp;} else if (roomsValue  guestValue) {<br>
+                &nbsp; &nbsp; &nbsp; &nbsp;roomsNumberCount.setCustomValidity('Вас слишком много выберите номер побольше!');<br>
+                &nbsp; &nbsp; }   else  {roomsNumberCount.setCustomValidity(``);}br
                 guestCountFormValue.reportValidity();
             }</code>
         </section>
-        <section class="lang">
+        <section class="lang" id="lang">
             <h2>Languages</h2>
             <ul>
                 <li>Russian (Native)</li>
                 <li>English (Elementary)</li>
             </ul>
         </section>
-        <section class="education">
+        <section class="education" id="edu">
             <h2>Education</h2>
             <ul>
                 <li>Kuban State University</li>
                 <li>Armavir Engineering College</li>
             </ul>
         </section>
-        <section class="project">
+        <section class="project" id="project">
             <h2>My project</h2>
             <ul>
-                <li>https://hristick.github.io/1124561-kekstagram-23/</li>
-                <li>https://hristick.github.io/1124561-technomart-27/</li>
-                <li>https://techosmotr-armavir.ru/</li>
-                <li>https://techosmotr-novokubansk.ru/</li>
+                <li><a href="https://hristick.github.io/1124561-kekstagram-23/">Kekstagram</a></li>
+                <li><a href="https://hristick.github.io/1124561-technomart-27/">Technomart</a></li>
+                <li><a href="https://techosmotr-armavir.ru/">techosmotr-armavir</a></li>
+                <li><a href="https://techosmotr-novokubansk.ru/">techosmotr-novokubansk</a></li>
             </ul>
         </section>
+        </main>
+        </div>
         <footer class="footer">
+            <p class="footer__copyright">&#169; by Hristick 2022</p>
             <a href="https://rs.school/js/"></a>
         </footer>
+        <script src="../js/main.js"></script>
     </body>    
 </html>
 
