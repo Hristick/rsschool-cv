@@ -4,8 +4,75 @@
         <link rel="stylesheet" href="css/style.css">
         <title>CV</title>
     </head>
-    <header>
-        <h1 class="hello">Hello Worls!!!</h1>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <ul class="navigaton">
+                    <li>About Myself</li>
+                    <li>Skils</li>
+                    <li>Code</li>
+                    <li>Languages</li>
+                    <li>Education</li>
+                    <li>My project</li>
+                </ul>
+            </nav>
+            <h1 class="hello">Vladimir Khristoforov</h1>
+        </header>
+        <section class="about">
+            <img src="img/IMG_7506-min.jpg" width="300" height="250" alt="Avatar">
+            <h2>I am a switcher from another technical specialty. Took several courses at htmlacademy. I love the frontend and the magic of the web.</h2>
+        </section>
+        <section class="skils">
+            <h2>My Skils</h2>
+            <ul>
+                <li>html/css</li>
+                <li>SASS</li>
+                <li>BEM</li>
+                <li>javaScript</li>
+                <li>Photoshop</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+        <section class="code">
+            <h2>Code Exemple</h2>
+            <code>const isFormValidityGuestCount = function () {
+                const guestValue = guestCountFormValue.value;
+                const roomsValue = roomsNumberCount.value;
+                if (roomsValue === `100`)  {
+                roomsNumberCount.setCustomValidity('Данная категория не для гостей!');
+                guestCountFormValue.value = 0;
+                } else if (roomsValue < guestValue) {
+                roomsNumberCount.setCustomValidity('Вас слишком много выберите номер побольше!');
+                }   else  {roomsNumberCount.setCustomValidity(``);}
+                guestCountFormValue.reportValidity();
+            }</code>
+        </section>
+        <section class="lang">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian (Native)</li>
+                <li>English (Elementary)</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Kuban State University</li>
+                <li>Armavir Engineering College</li>
+            </ul>
+        </section>
+        <section class="project">
+            <h2>My project</h2>
+            <ul>
+                <li>https://hristick.github.io/1124561-kekstagram-23/</li>
+                <li>https://hristick.github.io/1124561-technomart-27/</li>
+                <li>https://techosmotr-armavir.ru/</li>
+                <li>https://techosmotr-novokubansk.ru/</li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <a href="https://rs.school/js/"></a>
+        </footer>
+    </body>    
 </html>
 
